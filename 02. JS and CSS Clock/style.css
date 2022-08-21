@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "montserrat";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  height: 100vh;
+  margin: 0;
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.clock-face {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 20px solid white;
+}
+
+.hand {
+  position: absolute;
+  transform-origin: bottom;
+  border-radius: 10px;
+  background: #000;
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.76, 1.99, 1, 0.99);
+  z-index: 10;
+}
+
+.hour-hand {
+  width: 3%;
+  height: 30%;
+  top: 19%;
+  left: 48.85%;
+}
+
+.minute-hand {
+  width: 2%;
+  height: 42%;
+  top: 7%;
+  left: 48.9%;
+}
+
+.second-hand {
+  width: 1.5%;
+  height: 48%;
+  top: 1%;
+  left: 49.25%;
+}
+
+.calender {
+  border: 2px solid rgb(69, 64, 64);
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  right: 15%;
+  top: 45%;
+  width: 70px;
+  height: 30px;
+  background: white;
+}
